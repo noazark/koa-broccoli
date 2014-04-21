@@ -14,7 +14,7 @@ function broccoliServer(options) {
 	}
 
 	// default options
-	var liveReloadPort = options.liveReloadPort || 35729
+	options.liveReloadPort = options.liveReloadPort || 35729
 
 	var tree = broccoli.loadBrocfile()
 	var builder = new broccoli.Builder(tree)
